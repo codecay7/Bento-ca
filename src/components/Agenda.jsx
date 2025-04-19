@@ -112,7 +112,7 @@ export default function Agenda() {
           <div className="relative isolate overflow-hidden bg-white px-4 sm:px-6 py-6 sm:py-8 md:px-10 md:py-12 rounded-2xl shadow-lg w-full max-w-2xl">
             <div className="text-center">
               <h3 className="text-lg sm:text-xl font-semibold leading-8 text-gray-900">
-                What to bring
+                What to bring?
               </h3>
               <p className="mt-2 text-sm sm:text-base leading-7 text-gray-600">
                 Just bring your enthusiasm and creativity! We provide all necessary tools, ingredients, and an apron for you to use during the workshop.

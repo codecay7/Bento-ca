@@ -38,17 +38,17 @@ const navigation = {
 
 export default function Footer() {
   return (
-    <footer className="bg-white">
+    <footer className="bg-[#F43F5E] text-white">
       <div className="container py-12 md:py-16">
         <div className="xl:grid xl:grid-cols-3 xl:gap-8">
           <div className="space-y-8">
-            <span className="font-playfair text-2xl font-bold text-brand-500">Bento Cakes</span>
-            <p className="text-sm leading-6 text-gray-600">
+            <span className="font-playfair text-2xl font-bold text-white">Bento Cakes</span>
+            <p className="text-sm leading-6 text-white">
               Master the art of Japanese-inspired bento cakes in London. Join our workshops and create beautiful, delicious memories.
             </p>
             <div className="flex space-x-6">
               {navigation.social.map((item) => (
-                <a key={item.name} href={item.href} className="text-gray-400 hover:text-gray-500">
+                <a key={item.name} href={item.href} className=" hover:text-gray-500">
                   <span className="sr-only">{item.name}</span>
                   <item.icon className="h-6 w-6" aria-hidden="true" />
                 </a>
@@ -57,11 +57,11 @@ export default function Footer() {
           </div>
           <div className="mt-16 grid grid-cols-2 gap-8 xl:col-span-2 xl:mt-0">
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-gray-900">Navigation</h3>
+              <h3 className="text-sm font-semibold leading-6">Navigation</h3>
               <ul role="list" className="mt-6 space-y-4">
                 {navigation.main.map((item) => (
                   <li key={item.name}>
-                    <a href={item.href} className="text-sm leading-6 text-gray-600 hover:text-gray-900">
+                    <a href={item.href} className="text-sm leading-6  hover:text-gray-900">
                       {item.name}
                     </a>
                   </li>
@@ -69,15 +69,15 @@ export default function Footer() {
               </ul>
             </div>
             <div>
-              <h3 className="text-sm font-semibold leading-6 text-gray-900">Contact</h3>
+              <h3 className="text-sm font-semibold leading-6 ">Contact</h3>
               <ul role="list" className="mt-6 space-y-4">
-                <li className="text-sm leading-6 text-gray-600">
+                <li className="text-sm leading-6 ">
                   <strong>Email:</strong> hello@bentocakes.london
                 </li>
-                <li className="text-sm leading-6 text-gray-600">
+                <li className="text-sm leading-6 ">
                   <strong>Phone:</strong> +44 20 1234 5678
                 </li>
-                <li className="text-sm leading-6 text-gray-600">
+                <li className="text-sm leading-6 ">
                   <strong>Location:</strong> Central London
                 </li>
               </ul>

@@ -68,7 +68,7 @@ export default function Benefits() {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true }}
-          className="mx-auto mt-16 max-w-5xl grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
+          className="mx-auto mt-16 max-w-6xl grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-4"
         >
           {benefits.map((benefit) => (
             <motion.div
@@ -76,16 +76,16 @@ export default function Benefits() {
               variants={itemVariants}
               className="relative p-6 bg-brand-50 rounded-2xl"
             >
-              <div className="absolute top-6 left-6">
-                <span className="inline-flex items-center justify-center rounded-lg bg-brand-100 p-2">
-                  <benefit.icon className="h-6 w-6 text-brand-500" aria-hidden="true" />
+              <div className="absolute top-6 left-6 bg">
+                <span className="inline-flex items-center justify-center rounded-lg bg-[#cb2e48] p-2">
+                  <benefit.icon className="h-6 w-6 text-brand-100" aria-hidden="true" />
                 </span>
               </div>
               <div className="mt-8">
-                <h3 className="text-lg font-semibold leading-8 text-gray-900">
+                <h3 className="text-lg font-semibold pt-5 leading-8 text-gray-900">
                   {benefit.name}
                 </h3>
-                <p className="mt-2 text-base leading-7 text-gray-600">
+                <p className="mt-2 text-base  pt-2  text-gray-500">
                   {benefit.description}
                 </p>
               </div>

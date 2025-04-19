@@ -16,9 +16,9 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm">
       <nav className="container flex items-center justify-between py-6" aria-label="Global">
-        <div className="flex lg:flex-1">
-          <a href="#" className="-m-1.5 p-1.5">
-            <span className="font-playfair text-2xl font-bold text-brand-500">Bento Cakes</span>
+        <div className="flex lg:flex-1 -mt-4">
+          <a href="#" className="-m-1.2 p-1.2 h-11 w-11">
+            <img src="./images/logo.png" alt="" />
           </a>
         </div>
         <div className="flex lg:hidden">
@@ -31,7 +31,7 @@ export default function Header() {
             <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
-        <div className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12 ">
           {navigation.map((item) => (
             <a
               key={item.name}
@@ -49,8 +49,8 @@ export default function Header() {
         </div>
       </nav>
       <Dialog as="div" className="lg:hidden" open={mobileMenuOpen} onClose={setMobileMenuOpen}>
-        <div className="fixed inset-0 z-50" />
-        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+        <div className="fixed inset-0 z-50 bg-black/20 backdrop-blur-sm" />
+        <Dialog.Panel className="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-white/80 backdrop-blur-md px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
           <div className="flex items-center justify-between">
             <a href="#" className="-m-1.5 p-1.5">
               <span className="font-playfair text-2xl font-bold text-brand-500">Bento Cakes</span>
@@ -71,7 +71,7 @@ export default function Header() {
                   <a
                     key={item.name}
                     href={item.href}
-                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-white/50 transition-colors duration-200"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     {item.name}
