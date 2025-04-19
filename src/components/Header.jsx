@@ -16,9 +16,11 @@ export default function Header() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 bg-white/80 backdrop-blur-sm">
       <nav className="container flex items-center justify-between py-6" aria-label="Global">
-        <div className="flex lg:flex-1 -mt-4">
-          <a href="#" className="-m-1.2 p-1.2 h-11 w-11">
-            <img src="./images/logo.png" alt="" />
+        <div className="flex lg:flex-1">
+          <a href="#" className="flex items-center space-x-2">
+            <span className="text-2xl font-bold bg-gradient-to-r from-pink-500 to-red-500 bg-clip-text text-transparent">
+              Bento Cakes
+            </span>
           </a>
         </div>
         <div className="flex lg:hidden">
