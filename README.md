@@ -2,6 +2,10 @@
 
 A modern, responsive website for a Bento Cake Workshop in London built with React, Tailwind CSS, and Framer Motion.
 
+## Live Demo
+You can view the live demo of the project here:  
+[Live Demo](https://bento-cakes.netlify.app/)
+
 ## Features
 
 - 🎨 Modern, clean design with smooth animations
